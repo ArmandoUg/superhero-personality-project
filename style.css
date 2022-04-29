@@ -25,10 +25,6 @@ body {
     padding:0;
 }
 
-#begin {
-
-}
-
 .home-screen {
     
    
@@ -75,4 +71,12 @@ button {
 
   .footer-content {
       padding: 30px;
+  }
+
+  #questions {
+      display: inline-block;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 100%;
+      background-color: rgb(182, 6, 6);
   }
