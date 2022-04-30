@@ -48,6 +48,10 @@ button {
     transition: background-color 0.1s ease 0s;
   }
 
+  button:hover {
+      background-color: grey;
+  }
+
   #marvel-logo {
       background-color: red;
       padding:3px 8px;
@@ -64,7 +68,7 @@ button {
 
   footer {
     position: static;
-    background-color: red;
+    background-color: rgb(43, 42, 42);
     bottom: 0px;
     width: 100%; 
     text-align: center;
@@ -95,4 +99,14 @@ button {
 
   #choices button:hover {
       background-color: red;
+  }
+
+  a {
+      color: white;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: rgb(165, 165, 165);
+      text-decoration: underline;
   }
