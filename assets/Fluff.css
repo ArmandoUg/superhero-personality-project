@@ -1,0 +1,92 @@
+header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+    padding: 7px;
+
+
+}
+
+h1,
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.chara-card {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* left: 25%; */
+    padding: 5%;
+    background-color: gray;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.chara-img {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    border-color: red;
+    border-style: solid;
+    right: 10%;
+}
+
+.chara-bio {
+    border-color: red;
+    border-style: solid;
+    position: relative;
+    padding: 10px;
+}
+
+.chara-card-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.chara-card-bottom span {
+    position: absolute;
+    bottom: 10px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.logo {
+    width: 10%;
+}
+
+
+footer {
+    position: static;
+    background-color: rgb(43, 42, 42);
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution {
+    color: red;
+}
+
+.footer-content {
+    padding: 30px;
+}
