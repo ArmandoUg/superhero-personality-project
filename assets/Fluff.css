@@ -28,6 +28,13 @@ body {
     padding: 0;
 }
 
+.name {
+    display: inline;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    width: 40%;
+}
+
 .chara-card {
     display: flex;
     justify-content: center;
@@ -76,9 +83,9 @@ button:hover {
 
 
 footer {
-    position: static;
+    position: absolute;
     background-color: rgb(43, 42, 42);
-    bottom: 0px;
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }
