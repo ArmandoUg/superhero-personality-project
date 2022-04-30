@@ -63,10 +63,11 @@ button {
   }
 
   footer {
-    position: absolute;
+    position: static;
     background-color: red;
     bottom: 0px;
     width: 100%; 
+    text-align: center;
   }
 
   .footer-content {
@@ -76,7 +77,22 @@ button {
   #questions {
       display: inline-block;
       margin: 5px;
-      cursor: pointer;
       font-size: 100%;
-      background-color: rgb(182, 6, 6);
+  }
+
+  #choices button {
+      
+      margin: 5px;
+      cursor: pointer;
+  font-size: 100%;
+  background-color: rgb(182, 6, 6);;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
+  transition: background-color 0.1s;
+  }
+
+  #choices button:hover {
+      background-color: red;
   }
