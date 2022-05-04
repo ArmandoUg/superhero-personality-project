@@ -46,7 +46,7 @@ body {
     margin: 0px auto;
 }
 
-.chara-img {
+.chara-img-block {
     display: inline-flex;
     position: relative;
     justify-content: center;
