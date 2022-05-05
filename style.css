@@ -6,13 +6,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
     background-color: rgb(43, 42, 42);
-    padding: 7px;
-    
-    
+    padding: 7px;   
 }
 
 h1 {
