@@ -30,6 +30,3 @@ fetch (marapi)
         location.replace('./fourofour.html')
     }, 5000)
 })
-// var marimg ="http://i.annihil.us/u/prod/marvel/i/mg/8/a0/523ca6f2b11e4/portrait_xlarge.jpg"
-// var image = document.querySelector(".test");
-// image.append(marimg); portrait_incredible.jpg
