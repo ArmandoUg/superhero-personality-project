@@ -109,3 +109,12 @@ button {
       color: rgb(165, 165, 165);
       text-decoration: underline;
   } 
+
+  .carousel-inner {
+    width:640px;
+    height:100%;
+  }
+
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
