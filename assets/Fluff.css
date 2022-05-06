@@ -28,11 +28,11 @@ body {
     padding: 0;
 }
 
-.name {
-    display: inline;
+.cname {
+    /* display: inline; */
     background-color: rgb(43, 42, 42);
     color: white;
-    width: 40%;
+
 }
 
 .chara-card {
@@ -52,14 +52,20 @@ body {
     justify-content: center;
     border-color: red;
     border-style: solid;
-    right: 10%;
+    /* right: 10%; */
+}
+.spacer{
+    padding: 3%;
 }
 
 .chara-bio {
+    display: flex;
+    flex-direction: column;
     border-color: red;
     border-style: solid;
     position: relative;
     padding: 10px;
+    align-items: center;
 }
 
 .chara-card-bottom {
@@ -69,7 +75,7 @@ body {
 }
 
 .chara-card-bottom span {
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px;
 }
 
@@ -83,9 +89,9 @@ button:hover {
 
 
 footer {
-    position: absolute;
+    position: relative;
     background-color: rgb(43, 42, 42);
-    bottom: 10px;
+    bottom: -140px;
     width: 100%;
     text-align: center;
 }
@@ -99,9 +105,42 @@ footer {
     position: relative;
 }
 
-@media screen and (max-width: 576px) {.chara-card {width: 80% }; }
+@media screen and (max-width: 1199.98px) {
+    .logo{
+        width: 15%;
+    }
+    .chara-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .chara-bio{
+        flex-direction: column;
+    }
+}
 
-@media (min-width: 768px) { }
+@media screen and (max-width: 768px) {
+   .logo{
+       width: 22%;
+   }
+    .chara-card {
+        width: 80%;
+    }
 
+.chara-bio{
+    display: flex;
+    align-items: center;
+}
+}
 
+@media screen and (max-width: 576px) {
+    .chara-card {
+        width: 80%
+    }
+
+    .chara-img-block {
+        display: flex;
+        box-sizing: inherit;
+    }
+}
