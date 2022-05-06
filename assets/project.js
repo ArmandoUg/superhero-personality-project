@@ -7,6 +7,7 @@ var marapi = `https://gateway.marvel.com:443/v1/public/characters/${characterCod
 var descriptionEl = document.querySelector(".description");
 var nameEl = document.querySelector(".cname");
 var imgEl= document.querySelector(".chara-img-block");
+var btnEL= document.querySelector(".btn")
 fetch (marapi) 
 .then(function(response){
     return response.json()
@@ -22,11 +23,17 @@ fetch (marapi)
    var image= document.createElement("img");
    image.setAttribute("src",imgapidata+"/portrait_incredible.jpg");
    imgEl.append(image);
+   var wikilink= apidata.data.results[0].urls[1].url;
+   btnEL.setAttribute("href", wikilink);
 
-}).catch(function(err){
-    console.log(err);
-    setTimeout(function(){
-        console.log("couldn't find a character... redirecting in 5 seconds...")
-        location.replace('./fourofour.html')
-    }, 5000)
+// }).catch(function(err){
+//     console.log(err);
+//     setTimeout(function(){
+//         console.log("couldn't find a character... redirecting in 5 seconds...")
+//         location.replace('./fourofour.html')
+//     }, 5000)
 })
+function gowiki() {
+    window.location=wikilink
+}
+btnEL.addEventListener("click", gowiki)
