@@ -38,12 +38,12 @@ fetch(marapi)
         wikilink= `https://www.marvel.com/characters/ms-marvel-kamala-khan`;
             btnEL.setAttribute("href", wikilink);
         btnEL.disabled = false
-        // }).catch(function(err){
-        //     console.log(err);
-        //     setTimeout(function(){
-        //         console.log("couldn't find a character... redirecting in 5 seconds...")
-        //         location.replace('./fourofour.html')
-        //     }, 5000)
+        }).catch(function(err){
+            console.log(err);
+            setTimeout(function(){
+                console.log("couldn't find a character... redirecting in 5 seconds...")
+                location.replace('./fourofour.html')
+            }, 5000)
     })
 
 function gowiki(wikilink) {
