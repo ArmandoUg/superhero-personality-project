@@ -41,12 +41,6 @@ body {
     grid-column: span 12 / span 12;
 }
 
-@media (min-width: 640px) {
-    .carousel {
-        grid-column: span 5 / span 5;
-    }
-}
-
 button {
     display: block;
     margin: 0 auto;
@@ -79,14 +73,8 @@ button:hover {
     grid-column: span 12 / span 12;
 }
 
-@media (min-width: 640px) {
-    .inner-content {
-        grid-column: span 2 / span 2;
-    }
-}
-
 footer {
-    position: static;
+    position: fixed;
     background-color: rgb(43, 42, 42);
     bottom: 0px;
     width: 100%;
@@ -140,3 +128,33 @@ a:hover {
 .carousel-inner>.item>a>img {
     width: 100%;
 }
+
+@media (min-width: 640px) {
+    .carousel {
+        grid-column: span 5 / span 5;
+    }
+}
+
+@media (min-width: 640px) {
+    .inner-content {
+        grid-column: span 2 / span 2;
+    }
+}
+
+@media (max-width: 1481px) {
+    .carousel {
+        grid-column: span 12 / span 12;
+    }
+
+    .inner-content {
+        grid-column: span 12 / span 12;
+    }
+}
+/*
+@media (min-width: 1060px) and (max-width: 1481px) {
+    footer {
+        position: absolute;
+    }
+}
+*/
+
