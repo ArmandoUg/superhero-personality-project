@@ -66,6 +66,15 @@ function showButtons() {
     firstQuestion();
 }
 
+// function anyQuestion(log, title, choices, attributes) {
+//     console.log(log);
+//     questionTitle.innerHTML = title;
+//     choiceOne.innerHTML = choices[0];
+//     choiceTwo.innerHTML = choices[1];
+//     choiceOne.setAttribute("onclick", attributes[0]);
+//     choiceTwo.setAttribute("onclick", attributes[1]);
+// }
+
 function firstQuestion() {
     console.log("Starting Quiz!");
     questionTitle.innerHTML = brainsBrawn;
