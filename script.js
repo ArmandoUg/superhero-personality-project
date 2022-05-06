@@ -5,7 +5,7 @@ var questionTitle = document.getElementById("questionTitle");
 var Choices = document.getElementById("choices");
 // var choiceOne = document.getElementById("choice1");
 // var choiceTwo = document.getElementById("choice2");
-var restartButton = document.querySelector(".resetButton");
+var restartButton = document.getElementById("Restart");
 
 // var brainsBrawn = "1. Brains or Brawn?";
 
@@ -134,9 +134,9 @@ var quizLogicMap = {
 };
 
 function getNext(q = quizLogicMap) {
-    console.log("your question's title is --- ", q.title);
-    console.log("choices are ", Object.keys(q.choices));
-    console.log(q);
+    // console.log("your question's title is --- ", q.title);
+    // console.log("choices are ", Object.keys(q.choices));
+    // console.log(q);
     questionTitle.innerHTML = q.title;
     var choices = Object.keys(q.choices);
     Choices.innerHTML = "";
@@ -158,11 +158,14 @@ function getNext(q = quizLogicMap) {
 
 function showButtons() {
     questionContainer.classList.remove("hide");
+    restartButton.classList.remove("hide");
     Choices.classList.remove("hide");
     Heading.classList.add("hide");
     getNext();
     // firstQuestion();
 }
+
+var restartbtn = restartButton.addEventListener("click");
 
 // function anyQuestion(log, title, choices, attributes) {
 //     console.log(log);
