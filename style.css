@@ -1,7 +1,8 @@
+* {
+    font-family: fantasy;
+}
+
 header {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -24,10 +25,23 @@ body {
 }
 
 .home-screen {
-    display: flex;
-    align-content: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: center;
+    /* display: flex;
+    align-content: center; */
+    /* height: calc(100vh - 138px); */
+}
 
-    height: calc(100vh - 138px);
+.carousel {
+    grid-column: span 12 / span 12;
+}
+
+@media (min-width: 640px) {
+    .carousel {
+        grid-column: span 5 / span 5;
+    }
 }
 
 button {
@@ -54,10 +68,17 @@ button:hover {
 
 .inner-content {
     background-color: rgb(182, 6, 6);
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
-    max-width: 711px;
+    /* max-width: 711px; */
     padding: 10px 50px;
+    grid-column: span 12 / span 12;
+}
+
+@media (min-width: 640px) {
+    .inner-content {
+        grid-column: span 2 / span 2;
+    }
 }
 
 footer {
@@ -72,14 +93,8 @@ footer {
     padding: 30px;
 }
 
-#questions {
-    display: inline-block;
-    margin: 5px;
-    font-size: 100%;
-}
-
 #choices button {
-    margin: 5px;
+    margin: 5px auto;
     cursor: pointer;
     font-size: 100%;
     background-color: rgb(182, 6, 6);
@@ -88,6 +103,11 @@ footer {
     color: white;
     border: 0;
     transition: background-color 0.1s;
+    border-width: 5px;
+}
+
+#Restart button {
+    margin: 0 auto;
 }
 
 #choices button:hover {
@@ -104,6 +124,35 @@ a:hover {
     text-decoration: underline;
 }
 
+/* .carousel-inner {
+    width: 640px;
+    height: 100%;
+} */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+
 .hide {
     display: none;
+}
+
+.home-screen.activate {
+    grid-template-columns: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+
+#questions {
+    text-align: center;
+    width: 400px;
+    max-width: 80%;
+    background-color: rgb(237, 191, 191);
+    padding: 10px;
+    border-radius: 10px;
 }

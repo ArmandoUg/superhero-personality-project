@@ -1,37 +1,9 @@
-var Heading = document.querySelector(".Heading");
 var startButton = document.querySelector(".start-button");
 var questionContainer = document.getElementById("questions");
 var questionTitle = document.getElementById("questionTitle");
 var Choices = document.getElementById("choices");
-// var choiceOne = document.getElementById("choice1");
-// var choiceTwo = document.getElementById("choice2");
-var restartButton = document.getElementById("Restart");
-
-// var brainsBrawn = "1. Brains or Brawn?";
-
-// var optimistPessismist = "2. Optimist ot Pessimist?";
-
-// var impatientPatient = "3. Patient or Impatient?";
-
-// var PersonalOne = "4. Which of these do you enjoy the most?";
-
-// var PersonalTwo = "4. Where are you most likely to be found?";
-
-// var PersonalThree = "4. Which of these do you dislike?";
-
-// var PersonalFour = "4. Where are you most likely to be found?";
-
-// var herosMap = {
-//     "Making Music": 1016181,
-//     Photography: 1009610,
-//     "At a fancy party": 1009368,
-// };
-
-// var personality = {
-//     brains: 0,
-//     brawn: 0,
-//     speed: 0,
-// };
+var btn = document.getElementsByTagName("button");
+var restartButton = document.querySelector(".resetButton");
 
 startButton.addEventListener("click", showButtons);
 
@@ -134,14 +106,15 @@ var quizLogicMap = {
 };
 
 function getNext(q = quizLogicMap) {
-    // console.log("your question's title is --- ", q.title);
-    // console.log("choices are ", Object.keys(q.choices));
-    // console.log(q);
+    console.log("your question's title is --- ", q.title);
+    console.log("choices are ", Object.keys(q.choices));
+    console.log(q);
     questionTitle.innerHTML = q.title;
     var choices = Object.keys(q.choices);
     Choices.innerHTML = "";
 
     for (var i = 0; i < choices.length; i++) {
+        console.log(choices[i]);
         let btn = document.createElement("button");
         let choice = choices[i];
         btn.innerHTML = choice;
@@ -158,14 +131,23 @@ function getNext(q = quizLogicMap) {
 
 function showButtons() {
     questionContainer.classList.remove("hide");
-    restartButton.classList.remove("hide");
     Choices.classList.remove("hide");
-    Heading.classList.add("hide");
+    document.getElementById("Restart").classList.remove("hide");
+    document.querySelector(".home-screen").classList.add("activate");
+    document.querySelector(".header").classList.add("hide");
+    document.getElementById("carouselExampleSlides").classList.add("hide");
+    document.getElementById("carouselExampleSlidesOnly").classList.add("hide");
+    document.querySelector(".inner-content").classList.add("hide");
     getNext();
     // firstQuestion();
 }
 
-var restartbtn = restartButton.addEventListener("click");
+restartButton.addEventListener("click", function () {
+    getNext();
+});
+
+//why does this ^ work but not just putting "getNext" in the eventlistener
+//after "click"???? ASK ERIK
 
 // function anyQuestion(log, title, choices, attributes) {
 //     console.log(log);
