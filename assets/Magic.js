@@ -3,7 +3,7 @@ var characterCode = location.search.split("=")[1];
 console.log('character code --- ', characterCode)
 
 
-var marapi = `https://gateway.marvel.com:443/v1/public/characters/${characterCode}?apikey=2a32ba5a2e6e8f0830ec870eb1659e04`;
+var marapi = `https://gateway.marvel.com:443/v1/public/characters/${characterCode}?apikey=9e474217a05c33630988f0fedbdb058e`;
 var descriptionEl = document.querySelector(".description");
 var nameEl = document.querySelector(".cname");
 var imgEl = document.querySelector(".chara-img-block");

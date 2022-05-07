@@ -3,7 +3,11 @@
 <image src="./images/homepage.jpg" alt="homepage that has two image carousels(one on left center, one right center) and a container that has a start button">
 
 A quiz will then populate the lower half of the page with the help of java script.  The user will the operate the quiz to determine which of the marvel characters added will the user be matched too.
-<image>
+<image src="./images/quiz.jpg" alt="quiz question number one, brains or brawn">
 
-Once the user answers the last question, the user will be redirected to abother html page that is built with html and css. The end page is also has java script to use the marvel api to fetch data
-<image>
+
+<image src="./images/quiz final.jpg" alt="final quiz question">
+
+Once the user answers the last question, the user will be redirected to abother html page that is built with html and css. The end page is also has java script to use the marvel api to fetch data and is appended dynamically with js as well.
+
+<image src="./images/api working.jpg" alt="endpage showing a working api">
