@@ -11,3 +11,8 @@ A quiz will then populate the lower half of the page with the help of java scrip
 Once the user answers the last question, the user will be redirected to another html page that is built with html and css. The end page also has java script to use the marvel api to fetch data and is appended dynamically with js as well.
 
 <image src="./images/api working.jpg" alt="endpage showing a working api">
+
+
+
+<p><a href="https://armandoug.github.io/superhero-personality-project/">Github</a></p>
+<p><a href= "https://github.com/ArmandoUg/superhero-personality-project">Github deployed page</a></p>
