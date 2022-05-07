@@ -133,6 +133,7 @@ function showButtons() {
     questionContainer.classList.remove("hide");
     Choices.classList.remove("hide");
     document.getElementById("Restart").classList.remove("hide");
+    document.querySelector(".Erik").setAttribute("class", "Erik");
     document.querySelector(".home-screen").classList.add("activate");
     document.querySelector(".header").classList.add("hide");
     document.getElementById("carouselExampleSlides").classList.add("hide");

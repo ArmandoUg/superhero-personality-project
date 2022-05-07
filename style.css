@@ -138,6 +138,16 @@ a:hover {
     display: none;
 }
 
+.Erik {
+    /* background-image: url("./images/captain-marvel-wallpaper.jpg"); */
+    background-image: no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+
 .home-screen.activate {
     grid-template-columns: none;
     display: flex;
@@ -146,13 +156,18 @@ a:hover {
     width: 100vw;
     height: 100vh;
     padding: 0;
+    /* background-image: url("./images/captain-marvel-wallpaper.jpg");
+    background-image: no-repeat center center fixed;
+    opacity: 0.5;
+    background-size: cover; */
 }
 
 #questions {
     text-align: center;
     width: 400px;
     max-width: 80%;
-    background-color: rgb(237, 191, 191);
+    background-color: rgb(216, 187, 241);
     padding: 10px;
     border-radius: 10px;
+    z-index: 1;
 }

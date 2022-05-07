@@ -35,8 +35,6 @@ fetch(marapi)
             wikilink = `https://www.marvel.com/characters/thanos`;
         if (characterCode === `1017577`)
             wikilink = `https://www.marvel.com/characters/ms-marvel-kamala-khan`;
-        if (characterCode === "1009297")
-            wikilink = "https://www.marvel.com/characters/sam-wilson";
         btnEL.setAttribute("href", wikilink);
         btnEL.disabled = false;
     })
