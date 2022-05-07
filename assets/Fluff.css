@@ -101,6 +101,15 @@ footer {
     color: red;
 }
 
+.atrtibution {
+    color: white;
+    text-decoration: none;
+}
+
+.atrtibution:hover {
+    color: rgb(165, 165, 165);
+    text-decoration: underline;}
+
 .footer-content {
     padding: 30px;
     position: relative;
