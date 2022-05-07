@@ -33,10 +33,14 @@ fetch(marapi)
         if (characterCode === '1009610')
             wikilink = `https://www.marvel.com/characters/spider-man-peter-parker`;
         if (characterCode === `1009652`)
-        wikilink= `https://www.marvel.com/characters/thanos`;
+            wikilink = `https://www.marvel.com/characters/thanos`;
         if (characterCode === `1017577`)
-        wikilink= `https://www.marvel.com/characters/ms-marvel-kamala-khan`;
-            btnEL.setAttribute("href", wikilink);
+            wikilink = `https://www.marvel.com/characters/ms-marvel-kamala-khan`;
+        btnEL.setAttribute("href", wikilink);
+        if (characterCode === `1009351`)
+            wikilink = `https://www.marvel.com/characters/hulk-bruce-banner`;
+        if (characterCode === `1009664`)
+            wikilink = `https://www.marvel.com/characters/thor-thor-odinson`;
         btnEL.disabled = false
         }).catch(function(err){
             console.log(err);
