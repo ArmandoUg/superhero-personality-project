@@ -1,91 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marvel Personality Quiz</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="tab icon" type="image/png" href="images/favicon2.jpg" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marvel Personality Quiz</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="tab icon" type="image/png" href="images/favicon2.jpg">
-</head>
-
-<body>
-    <header>
-        <h1><span id="marvel-logo">MARVEL</span> Personality Quiz</h1>
-        <p>Find out which Marvel character best fits you!</p>
-    </header>
-
-    <div class="home-screen">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/034wlv_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Wolverine">
+    <body>
+        <header class="header">
+            <h1><span id="marvel-logo">MARVEL</span> Personality Quiz</h1>
+            <p>Find out which Marvel character best fits you!</p>
+        </header>
+        <div class="Erik hide"></div>
+        <div class="home-screen">
+            <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/034wlv_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Wolverine"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/019tha_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Thanos"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/037smm_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Miles Morales Spider-Man"
+                        />
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/019tha_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Thanos">
+            </div>
+
+            <div class="inner-content">
+                <p id="begin">Click here to begin!</p>
+                <button class="start-button">Begin Quiz</button>
+            </div>
+
+            <div id="questions" class="hide">
+                <div id="questionTitle"></div>
+                <div id="choices"></div>
+                <div id="Restart" class="hide">
+                    <button class="resetButton">Restart</button>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/037smm_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Miles Morales Spider-Man">
+            </div>
+
+            <div
+                id="carouselExampleSlides"
+                class="carousel slide"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/006hbb_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Hulk"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/011blw_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Black Widow"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/002irm_com_crd_01.jpg"
+                            class="d-block w-100"
+                            alt="Image of Iron Man"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="inner-content">
-            <p id="begin">Click here to begin!</p>
-            <button class="start-button">Begin Quiz</button>
-        </div>
-
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/006hbb_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Hulk">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/011blw_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Black Widow">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/002irm_com_crd_01.jpg"
-                        class="d-block w-100" alt="Image of Iron Man">
-                </div>
+        <footer>
+            <div class="footer-content">
+                <a href="http://marvel.com\" target="_blank"
+                    >Data provided by Marvel. © 2022 MARVEL</a
+                >
             </div>
-        </div>
-    </div>
+        </footer>
 
-    <div id="questions" class="hidden">
-        <h2 id="question-number">Question</h2>
-        <h3 id="question-title">This is a question</h3>
-        <div id="choices" class="choices">
-            <button id="choice1">A</A></button>
-            <button id="choice2">B</button>
-            <button id="choice3">C</button>
-            <button id="choice4">D</button>
-        </div>
-    </div>
+        <script src="./script.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
 
-    <footer>
-        <div class="footer-content">
-            <a href="http://marvel.com\" target="_blank">Data provided by Marvel. © 2022 MARVEL</a>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script>$('.carousel slide').carousel({ interval: 2000 })</script>
-</body>
-
+        <script>
+            $(".carousel slide").carousel({ interval: 2000 });
+        </script>
+    </body>
 </html>
